@@ -4,7 +4,7 @@ import * as ReactBootStrap from "react-bootstrap";
 import TextField from '@material-ui/core/TextField';
 
 function List() {
-
+    //sample data before we had the get working
     const orders = [
         {item: "Build-A-Bear", type: "Misc", user: "John"},
         {item: "Phone", type: "Tech", user: "John"},
@@ -17,6 +17,7 @@ function List() {
         {item: "Chick-Fil-A", type: "Food", user: "John"}
     ]
 
+    //for each item, load that item and give it the proper css
     const renderItem = (thing, index) => {
         return(
             <tr key={index}>
@@ -28,6 +29,7 @@ function List() {
     }
 //value={userID}
     return (
+        //the thead is the header of the tables, after it is loaded dynamically
         <div className = 'formC'>
             <TextField id="outlined-search" label="Start Date" type="search" variant="outlined" className = "spaceC"/>
             <TextField id="outlined-search" label="End Date" type="search" variant="outlined" className = "space2C"/>

@@ -1,4 +1,8 @@
 .pos {
     position: absolute;
-    left: 200px;
+    left: 85vw;
   }
+
+.col {
+  color: white;
+}

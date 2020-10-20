@@ -14,10 +14,14 @@ class BasicTextFields extends Component {
     }
   }
 
+  //changes the state
   changeHandler = (e) => {
     this.setState({[e.target.name]: e.target.value})
   }
 
+  //https://www.youtube.com/watch?v=x9UEDRbLhJE
+  //tried to use this video to do a post but didnt work due to some issues to debug
+  //console logs and tries to submit
   submitHandle = (e) => {
     e.preventDefault()
     console.log(this.state)
@@ -34,11 +38,12 @@ class BasicTextFields extends Component {
     const {title,description,amount} = this.state
     const {visible} = false
     //const showVisible = () => setVisible(!visible);
-
+    
+    // stores the values in the state when changed, on submit it is consoled logged
   return (
     <form className = {!visible ? 'formN' : 'form-nonN'}>
-    <TextField id="outlined-search" onChange = {this.changeHandler} name = "title" value ={title} label="title" type="search" variant="outlined" className = "space11"/>
-    <TextField id="outlined-search" onChange = {this.changeHandler} name = "description" value ={description} label="description" type="search" variant="outlined" className = "space22"/>
+    <TextField id="outlined-search" onChange = {this.changeHandler} name = "title" value ={title} label="State" type="search" variant="outlined" className = "space11"/>
+    <TextField id="outlined-search" onChange = {this.changeHandler} name = "description" value ={description} label="Hours" type="search" variant="outlined" className = "space22"/>
     <TextField id="outlined-search" onChange = {this.changeHandler} name = "amount" value ={amount} label="$ amount Hour" type="search" variant="outlined" className = "space33"/>
       <Button variant="outlined" onChange = {this.changeHandler} color="secondary" className = "space44" onClick={this.submitHandle}>
         Submit

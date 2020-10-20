@@ -14,13 +14,13 @@ function Sidebar(){
     const [Cashflow, setCashflow] = useState(false);
     const showCashflow = () => setCashflow(!Cashflow);
 
-    //const [NPC, setNPC] = useState(false);
-    //const showNPC = () => setNPC(!NPC);
-    function increaseFont(e) {
+
+    //change the colors between black n white, changed the fontsize before but now just color
+    function turnWhite(e) {
         //e.target.style.background = 'white';
         e.target.style.color = 'white';
       }
-    function decreaseFont(e) {
+    function turnBlack(e) {
         //e.target.style.background = 'white';
         e.target.style.color = 'black';
     }
@@ -28,21 +28,18 @@ function Sidebar(){
     
     return (
 //if the button is clicked it changes the sidebars state
+//if a forms button is hovered it changes to white/black, if clicked it opens the form
         <div className =  {sidebar ? 'sidebar-active' : 'sidebar-nonactive'}>
-            <b1 className = {sidebar ? 'mini1' : 'mini1-non'} onMouseEnter = {increaseFont} onMouseLeave = {decreaseFont} onClick={showPayment}> Next Payment Calculation</b1>
-            <b1 className = {sidebar ? 'mini2' : 'mini2-non'} onMouseEnter = {increaseFont} onMouseLeave = {decreaseFont}>Goals</b1>
-            <b1 className = {sidebar ? 'mini3' : 'mini3-non'} onMouseEnter = {increaseFont} onMouseLeave = {decreaseFont} onClick={showCashflow}>Cashflow</b1>
-            <b1 className = {sidebar ? 'mini4' : 'mini4-non'} onMouseEnter = {increaseFont} onMouseLeave = {decreaseFont}>Inventory</b1>
-            <b1 className = {sidebar ? 'mini5' : 'mini5-non'} onMouseEnter = {increaseFont} onMouseLeave = {decreaseFont}>Scheduling</b1>
+            <b1 className = {sidebar ? 'mini1' : 'mini1-non'} onMouseEnter = {turnWhite} onMouseLeave = {turnBlack} onClick={showPayment}> Next Payment Calculation</b1>
+            <b1 className = {sidebar ? 'mini2' : 'mini2-non'} onMouseEnter = {turnWhite} onMouseLeave = {turnBlack}>Goals</b1>
+            <b1 className = {sidebar ? 'mini3' : 'mini3-non'} onMouseEnter = {turnWhite} onMouseLeave = {turnBlack} onClick={showCashflow}>Cashflow</b1>
+            <b1 className = {sidebar ? 'mini4' : 'mini4-non'} onMouseEnter = {turnWhite} onMouseLeave = {turnBlack}>Inventory</b1>
+            <b1 className = {sidebar ? 'mini5' : 'mini5-non'} onMouseEnter = {turnWhite} onMouseLeave = {turnBlack}>Scheduling</b1>
             <button className =  {sidebar ? 'dot' : 'dot-non'} onClick={showSidebar}></button>
             {!Payment ? 'hidden' : <Npcform/>}
             {!Cashflow ? 'hidden' : <CashFlow/>}
         </div>
-        //</div2>
-        //<form className={NPC ? 'form' : 'form-non'}>
-        //<button type='submit' onClick={console.log('1')}>Submit</button>
-    //</form>
     )
 }
-
+//the use of ternary operators is to show and hide the forms
 export default Sidebar
