@@ -14,6 +14,10 @@ function Nav() {
             <Link style={navStyle} to='/'>
                 <li>Home</li>
             </Link>
+
+            <Link style={navStyle} to='/Landing'>
+                <li>Landing</li>
+            </Link>
             
             <Link style={navStyle} to='/About'>
                 <li>About</li>

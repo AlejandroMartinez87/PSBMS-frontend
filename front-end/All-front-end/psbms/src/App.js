@@ -7,6 +7,7 @@ import About from './About';
 import Loginpage from './Loginpage';
 import Signup from './Signup';
 import PSBMS from './PSBMS';
+import Landing from './Landing';
 import Sidebar from './Comp/Components/Sidebar.js';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
 
@@ -24,6 +25,7 @@ class App extends React.Component {
                   <Route path="/Contact" component={Contact}/>
                   <Route path="/About" component={About}/>
                   <Route path="/PSBMS" component={PSBMS}/>
+                  <Route path="/Landing" component={Landing}/>
                  
                 </Switch>
           </Router>
@@ -37,7 +39,7 @@ class App extends React.Component {
       <Switch>
          <Route path="/Loginpage" exact component={Loginpage}/>
          <Route path="/Signup" component={Signup}/>
-         <Route path="/Sidebar" component={Sidebar}/>
+         <Route path="/Landing" component={Landing}/>
          <Route component={DefaultRoutes}/>
       </Switch>
     </Router>
