@@ -36,8 +36,8 @@ function Sidebar(){
             <b1 className = {sidebar ? 'mini4' : 'mini4-non'} onMouseEnter = {turnWhite} onMouseLeave = {turnBlack}>Inventory</b1>
             <b1 className = {sidebar ? 'mini5' : 'mini5-non'} onMouseEnter = {turnWhite} onMouseLeave = {turnBlack}>Scheduling</b1>
             <button className =  {sidebar ? 'dot' : 'dot-non'} onClick={showSidebar}></button>
-            {!Payment ? 'hidden' : <Npcform/>}
-            {!Cashflow ? 'hidden' : <CashFlow/>}
+            {!Payment ? '' : <Npcform/>}
+            {!Cashflow ? '' : <CashFlow/>}
         </div>
     )
 }
