@@ -1,4 +1,5 @@
-import React, { useState, Component } from 'react';
+// import React, { useState, Component } from 'react';
+import React, {Component } from 'react';
 import  './../Styles/npc.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';

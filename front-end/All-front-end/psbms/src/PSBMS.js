@@ -1,24 +1,90 @@
-import React from 'react';
+import React from "react"; 
+import "./Home.css"; 
+import HomeI from "./homeP.png"; 
+// import Logo from "./logo.png"; 
+import Features from "./Features";
+// import { Link } from "react-router-dom";
+// import Prod1 from "./prod1.jpg";
 
-function PSBMS() {
-  return (
-    <div>
-      <h1>PSBMS</h1>
-        <h2>I. Introduction</h2>
-            <border-box>
-            <right-justify><p>We are Team 6. Team of 4 students, and our team<br></br>
-                              is composed of two Computer Scientist Students<br></br>
-                              and two Software Engineering students.Our goal as a team<br></br>
-                              during this semester is to build a software product to help<br></br> 
-                              our communities to enhance their business in management of their profit,<br></br> 
-            gain, and expenses.</p></right-justify>    
-            </border-box>
+function psbms() {
+    return (
+        <div className="home">
+        {/* <img className="home__image" src={HomeI} alt=""/>  */}
+        <img 
+                className="home__image"
+                // src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+                src={HomeI}
+                alt=""
+            /> 
 
-         II.                Vision Statement
-During the current situation that the entire world is going through we decided as a team to build a software product which will help individuals and small businesses to manage their financing and to keep up with their changing needs. Our product will provide features that will help them to cover everything they need in order to monitor their goals and expenses through our software product which we baptized as “Personal and Small Business Management System”. Its user-interface will be calendar based to show changes/updates while allowing the user to select which features to customize their options such as expense management.
+        <div className="home__row">
+            <Features
+            id="1"
+            title="Login"
+            price={11.96}
+            rating={1}
+            // image={Logo}
+            />
 
+            <Features
+            id="2"
+            title="Sign Up"
+            price={14.99}
+            rating={4}
+            // image={Logo}
+            />
+        </div>
+
+        <div className="home__row">
+            <Features
+            id="1"
+            title="Next Payment Calculation"
+            price={11.96}
+            rating={1}
+            // image={Logo}
+            />
+
+            <Features
+            id="2"
+            title="Goals"
+            price={14.99}
+            rating={4}
+            // image={Logo}
+            />
+        </div>
+
+
+        <div className="home__row">
+            <Features
+            id="1"
+            title="Cashflow"
+            price={11.96}
+            rating={1}
+            // image={Logo}
+            />
+
+            <Features
+            id="2"
+            title="Inventory"
+            price={14.99}
+            rating={4}
+            // image={Logo}
+            />
+        </div>
+
+        <div className="home__row">
+            <Features
+            id="2"
+            title="Scheduling"
+            price={14.99}
+            rating={4}
+            // image={Logo}
+            />
+        </div>
+        
     </div>
-  );
+
+    );
 }
 
-export default PSBMS;
+export default psbms

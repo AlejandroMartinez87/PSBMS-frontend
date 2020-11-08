@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { findAllByTestId } from '@testing-library/react';
+// import { findAllByTestId } from '@testing-library/react';
 
 ReactDOM.render(
   <React.StrictMode>
