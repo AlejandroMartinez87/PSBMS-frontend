@@ -52,3 +52,13 @@
     height: 40px;
     top: 0px;
 }
+
+.goals{
+    position: absolute;
+    overflow: scroll;
+    top: 0vh;
+    height: 70vh;
+    width: 60vw;
+    left: 25vw;
+    background-color: white;
+}

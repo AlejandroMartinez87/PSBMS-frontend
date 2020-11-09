@@ -2,10 +2,11 @@
   .background{
     position: absolute;
     background-color: grey;
-    height: 70vh;
-    width: 75vw;
-    left: 20vw;
-    top: 10vh;
+    height: 90vh;
+    width: 80vw;
+    left: 10vw;
+    top: 2.5vh;
+    overflow: hidden;
   }
 
   .mw{
