@@ -1,0 +1,46 @@
+.goals{
+    position: absolute;
+    top: 0vh;
+    height: 70vh;
+    width: 60vw;
+    left: 25vw;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+.increase{
+    position: relative;
+    background-color:lightblue;
+    right: 10vw;
+}
+.decrease{
+    position: relative;
+    background-color: lightcoral;
+    left: 2vw;
+}
+
+.item{
+    position: relative;
+    left: 5vw;
+}
+
+.bet{
+    position: relative;
+    text-align: center;
+    background-color: lightgray;
+    font-size: 40px;
+    border: black;
+    border-width: 1mm;
+    border-style: solid;
+    border-color: white;
+}
+
+.itemcount{
+    position: relative;
+    left: 4.5vw;
+}
+
+.task{
+    position: relative;
+    right: 7.5vw;
+}

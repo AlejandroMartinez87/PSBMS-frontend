@@ -5,23 +5,23 @@ import  './../Styles/goals.css';
 
 const data = [
   {
-    Goal: 'Microsoft', Info: 'Bought at $43.50 per', Count: 10
+    Goal: 'Secure the Job', Info: 'Have Multiple Offers', Count: 10
   },
   {
-    Goal: 'Amazon', Info: 'Bought at $43.50 per', Count: 20
+    Goal: 'Invest for the future', Info: 'Buy stock on the low, sell on the high', Count: 20
   },
   {
-    Goal: 'Google', Info: 'Bought at $43.50 per', Count: 30
+    Goal: 'Pay Subscriptions',Info: 'Spotify, HBO Max, Netflix', Count: 30
   },
   {
-    Goal: 'American Express', Info: 'Bought at $43.50 per', Count: 40
+    Goal: 'Cook A Meal Once A Week',Info: 'Got to save up for the McChicken', Count: 40
   },];
 
 
-function Inventory() {
+function Goals() {
     return (
         <div className="goals">
-          <h1 className="bet">Stock</h1>
+          <h1 className="bet">Goals</h1>
             <List
             itemLayout="horizontal"
             dataSource={data}
@@ -29,13 +29,10 @@ function Inventory() {
             <List.Item className="item">
                 <List.Item.Meta title={item.Goal}/>
                 <List.Item.Meta className = "task" description={item.Info}/>
-                <Button className="decrease">Dec</Button>
-                <List.Item.Meta  className = "itemcount" description={item.Count}/>
-                <Button className="increase">Inc</Button>
             </List.Item>
             )}/>
     </div>
   );
 }
   
-export default Inventory;
+export default Goals;

@@ -31,6 +31,7 @@ function List() {
     return (
         //the thead is the header of the tables, after it is loaded dynamically
         <div className = 'formC'>
+            <h1 className="bet">Review</h1>
             <TextField id="outlined-search" label="Start Date" type="search" variant="outlined" className = "spaceC"/>
             <TextField id="outlined-search" label="End Date" type="search" variant="outlined" className = "space2C"/>
             <ReactBootStrap.Table striped bordered hover className = "tableC">
