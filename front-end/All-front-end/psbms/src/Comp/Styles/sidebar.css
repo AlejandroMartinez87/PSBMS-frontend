@@ -33,7 +33,7 @@ transition: 450ms;
     color: black;
     text-align: center;
     font-size: 28px;
-    background: #FF0000;
+    background:#0000FF;
     transition: 800ms;
 }
 
@@ -57,7 +57,7 @@ transition: 450ms;
     color: black;
     text-align: center;
     font-size: 28px;
-    background: #FF4848;
+    background: #4848FF;
     transition: 800ms;
 }
 .mini2-non{
@@ -80,7 +80,7 @@ transition: 450ms;
     color: black;
     text-align: center;
     font-size: 28px;
-    background: #FF7676;
+    background: #7676FF;
     transition: 800ms;
 }
 .mini3-non{
@@ -103,7 +103,7 @@ transition: 450ms;
     color: black;
     text-align: center;
     font-size: 28px;
-    background: #FF9B9B;
+    background: #9B9BFF;
     transition: 800ms;
 }
 .mini4-non{
@@ -126,7 +126,7 @@ transition: 450ms;
     color: black;
     text-align: center;
     font-size: 28px;
-    background: #FFC8C8;
+    background: #C8C8FF;
     transition: 800ms;
 }
 .mini5-non{
