@@ -8,8 +8,8 @@ function Aboutus() {
     <div>
         <div class="about-section">
             <h1>About Us Page</h1>
-            <p>We are Team 6. Team of 4 students,</p>
-            <p>and our team is composed of two Computer Scientist</p>
+            <p>We are Team 6.</p>
+            {/* <p>and our team is composed of two Computer Scientist</p> */}
             {/* <p> Students and two Software Engineering students.</p>
             <p>Our goal as a team during this semester</p>
             <p>is to build a software product t</p>
