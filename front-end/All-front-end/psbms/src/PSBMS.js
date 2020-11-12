@@ -5,6 +5,12 @@ import HomeI from "./homeP.png";
 import Features from "./Features";
 // import { Link } from "react-router-dom";
 // import Prod1 from "./prod1.jpg";
+import Inventory from "./Inventory.jpeg"; 
+import Cashflow from "./cashflow.jpeg";
+import Expenses from "./expenses.jpeg";
+import Paycheck from "./Paycheck.jpeg";
+import Scheduling from "./schedule.jpeg";
+import Banner from "./linkedin_banner_image_2.png"
 
 function psbms() {
     return (
@@ -13,11 +19,12 @@ function psbms() {
         <img 
                 className="home__image"
                 // src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-                src={HomeI}
+                // src={HomeI}
+                src={Banner}
                 alt=""
             /> 
 
-        <div className="home__row">
+        {/* <div className="home__row">
             <Features
             id="1"
             title="Login"
@@ -33,7 +40,7 @@ function psbms() {
             rating={4}
             // image={Logo}
             />
-        </div>
+        </div> */}
 
         <div className="home__row">
             <Features
@@ -41,26 +48,34 @@ function psbms() {
             title="Next Payment Calculation"
             price={11.96}
             rating={1}
-            // image={Logo}
+            image={Paycheck}
             />
 
             <Features
             id="2"
-            title="Goals"
+            title="Expenses"
             price={14.99}
             rating={4}
-            // image={Logo}
+            image={Expenses}
             />
+             <Features
+            id="1"
+            title="Cashflow"
+            price={11.96}
+            rating={1}
+            image={Cashflow}
+            />
+             
         </div>
 
 
         <div className="home__row">
             <Features
             id="1"
-            title="Cashflow"
+            title="e-commerce"
             price={11.96}
             rating={1}
-            // image={Logo}
+            image={Cashflow}
             />
 
             <Features
@@ -68,19 +83,27 @@ function psbms() {
             title="Inventory"
             price={14.99}
             rating={4}
-            // image={Logo}
+            image={Inventory}
             />
-        </div>
 
-        <div className="home__row">
             <Features
             id="2"
             title="Scheduling"
             price={14.99}
             rating={4}
-            // image={Logo}
+            image={Scheduling}
             />
         </div>
+
+        {/* <div className="home__row">
+            <Features
+            id="2"
+            title="Scheduling"
+            price={14.99}
+            rating={4}
+            image={Scheduling}
+            />
+        </div> */}
         
     </div>
 

@@ -20,11 +20,11 @@ function Header() {
             </div>
 
             <div className="header__nav">
-            <Link to="/morefeature" className="header__link">
+            {/* <Link to="/morefeature" className="header__link">
                 <div className="header__option">
                     <span className="header__optionLineTwo">Morefeature</span>
                 </div>
-            </Link>
+            </Link> */}
             </div>
 
             {/* <div className="header__nav">

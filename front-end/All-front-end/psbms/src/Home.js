@@ -1,5 +1,5 @@
 import React from "react"; 
-import "./Home.css"; 
+import "./Home1.css"; 
 import HomeI from "./homeP.png"; 
 // import Logo from "./logo.png"; 
 // import Features from "./Features";
@@ -8,8 +8,8 @@ import HomeI from "./homeP.png";
 
 function Home() {
     return (
-        <div className="home">
-            <img className="home__image" src={HomeI} alt=""/> 
+        <div className="homeA">
+            <img className="home__imageA" src={HomeI} alt=""/> 
         </div>
     )
 }

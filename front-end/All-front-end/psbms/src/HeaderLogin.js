@@ -11,13 +11,15 @@ function Header() {
                 <img className="header__logo" src={Logo} alt=""/> 
             </Link>
 
-            <div className="header__nav">
+            {/* <div className="header__nav">
             <Link to="/signup" className="header__link">
                 <div className="header__option">
                     <span className="header__optionLineTwo">Sign Up</span>
                 </div>
             </Link>
-            </div>
+            </div> */}
+
+
 
             {/* <Link to="/checkout" className="header__link">
                 <div className="header_optionBasket">

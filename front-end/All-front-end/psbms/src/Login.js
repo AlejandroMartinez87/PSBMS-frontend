@@ -3,6 +3,7 @@ import './Login.css'
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "./firebase";
 import Logo from "./logo_transparent.png";
+import Landing from './Landing';
 
 function Login() {
     const history = useHistory();
@@ -15,7 +16,7 @@ function Login() {
         auth
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
-                history.push('/') // direct it to Dashboard
+                history.push('/landing') // direct it to Dashboard
             })
             .catch(error => alert(error.message))
     }
@@ -28,7 +29,7 @@ function Login() {
             .then((auth) => {
                 // it successfully created a new user with email and password
                 if (auth) {
-                    history.push('/')
+                    history.push('/landing')
                 }
             })
             .catch(error => alert(error.message))
@@ -55,7 +56,7 @@ function Login() {
                 </form>
 
                 <p>
-                    By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
+                    By signing-in you agree to the PSBMS Conditions of Use. Please
                     see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
 
