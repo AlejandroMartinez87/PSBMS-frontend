@@ -7,8 +7,8 @@ function Aboutus() {
     return (
     <div>
         <div class="about-section">
-            <h1>About Us Page</h1>
-            <p>We are Team 6.</p>
+            <h1><strong>About US Page</strong></h1>
+            <h3>Team 6</h3>
             {/* <p>and our team is composed of two Computer Scientist</p> */}
             {/* <p> Students and two Software Engineering students.</p>
             <p>Our goal as a team during this semester</p>
@@ -22,7 +22,7 @@ function Aboutus() {
                 <div class="card">
                     <img src={Portrait} alt="Alex"/>
                     <div class="containerA">
-                        <h2>Alex Martinez</h2>
+                        <h2><strong>Alex Martinez</strong></h2>
                         <p class="title">Dev/Front-end</p>
                         {/* <p>Some text that describes me</p> */}
                         <p className="stud">Computer Scienctist Student</p>
@@ -36,7 +36,7 @@ function Aboutus() {
                 <div class="card">
                     <img className="Photo_h" src={Portrait} alt="Iyemenvile"/>
                     <div class="containerA">
-                        <h2>Joel Itipo</h2>
+                        <h2><strong>Joel Itipo</strong></h2>
                         <p class="title">Dev/Front-End</p>
                         <p className="stud">Computer Scientist Student</p>
                         <p>joel@example.com</p>
@@ -50,7 +50,7 @@ function Aboutus() {
                 <div class="card">
                     <img src={Portrait}  alt="Jimmy" style={{Width:100}}/>
                     <div class="containerA">
-                        <h2>Jimmy Lee</h2>
+                        <h2><strong>Jimmy Lee</strong></h2>
                         <p class="title">Dev/Back-End</p>
                         <p className="stud">Software Engineer Student</p>
                         <p>john@example.com</p>
@@ -63,7 +63,7 @@ function Aboutus() {
                 <div class="card">
                     <img src={Portrait} alt="Ujjwal" style={{Width:100}}/>
                     <div class="containerA">
-                        <h2>Ujjwal </h2>
+                        <h2><strong>Ujjwal Bajagain</strong></h2>
                         <p class="title">Dev/Back-End</p>
                         <p className="stud">Software Engineer Student</p>
                         <p>ujjwal@gmail.com</p>
