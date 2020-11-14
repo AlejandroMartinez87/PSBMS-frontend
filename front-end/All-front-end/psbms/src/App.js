@@ -22,32 +22,6 @@ import { auth } from "./firebase";
 import HFooter from "./CallFoot";
 
 function App() {
-  // const[{user},dispatch] = useStateValue(); 
-
-  // useEffect(() => {
-  //   const unsubscribe = auth.onAuthStateChanged((authUser) => {
-  //     console.log("THE USER IS >>>", authUser);
-
-  //     if(authUser) {
-  //       dispatch({
-  //         type: "SET_USER",
-  //         user: authUser,
-  //       }); 
-  //     } 
-  //     else{
-  //         dispatch({
-  //         type: "SET_USER",
-  //         user: null,
-  //       });
-  //     }
-  //   });
-
-  //   return () => {
-  //       unsubscribe();
-  //   }
-  // },[]);
-
-
   return (
     <Router>
       <div className="app">
