@@ -10,11 +10,10 @@ function Contact() {
     const [message,setMessage]=useState("");
 
     const[loader,setLoader]=useState(false);
-    // const handleSubmit= (e) => {
-    //     e.
-    // }
+   
     const handleSubmit= (e) => {
         e.preventDefault(); 
+        setLoader(true)
     // if(db.collection=null)
     // {
         db.collection('Contacts').add({
@@ -24,6 +23,7 @@ function Contact() {
         })
         .then(()=> {
             alert("Message has been submitted 👍" ); 
+            setLoader(false);
         })
         .catch((error)=> {
             alert(error.message);
