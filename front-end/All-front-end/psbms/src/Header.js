@@ -2,10 +2,10 @@ import React from 'react';
 import "./Header.css";
 import { Link } from "react-router-dom"; 
 import Logo from "./logo_transparent.png";
-import { auth } from "./firebase";
+// import { auth } from "./firebase";
 // import SearchIcon from "@material-ui/icons/Search";
 // import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-import { useStateValue } from "./StateProvider";
+// import { useStateValue } from "./StateProvider";
 
 // const [{basket,user}]=useStateValue(); 
 

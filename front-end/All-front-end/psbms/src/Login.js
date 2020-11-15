@@ -3,7 +3,7 @@ import './Login.css'
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "./firebase";
 import Logo from "./logo_transparent.png";
-import Landing from './Landing';
+// import Landing from './Landing';
 
 function Login() {
     const history = useHistory();

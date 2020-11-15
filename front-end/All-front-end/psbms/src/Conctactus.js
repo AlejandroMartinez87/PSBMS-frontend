@@ -1,83 +1,57 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Conctactus.css";
-// import "./c.css";
-// import ReactFontFace from "react-font-face";
+import {db} from './firebase';
 
-function Conctactus() {
+
+function Contact() {
+
+    const [name,setName]=useState("");
+    const [email,setEmail]=useState("");
+    const [message,setMessage]=useState("");
+
+    const[loader,setLoader]=useState(false);
+    // const handleSubmit= (e) => {
+    //     e.
+    // }
+    const handleSubmit= (e) => {
+        e.preventDefault(); 
+    // if(db.collection=null)
+    // {
+        db.collection('Contacts').add({
+            name:name,
+            email:email,
+            message:message,
+        })
+        .then(()=> {
+            alert("Message has been submitted 👍" ); 
+        })
+        .catch((error)=> {
+            alert(error.message);
+            setLoader(false);
+        }); 
+        setName("");
+        setEmail("");
+        setMessage(""); 
+    // }
+    };
+        
+
     return (
-        <div className="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
 
-            <h2 class="w3-center">Contact Us</h2>
-            <div class="w3-row w3-section">
-                <div class="w3-col" style={{width:50}}><i class="w3-xxlarge fa fa-user"></i></div>
-                <div class="w3-rest">
-                <input class="w3-input w3-border" name="first" type="text" placeholder="First Name"/>
-                </div>
-            </div>
+        <form className="form" onSubmit={handleSubmit}>
+            <h1>Contact form 🤙 📱 </h1>
 
-            <div class="w3-row w3-section">
-                <div class="w3-col" style={{width:50}}><i class="w3-xxlarge fa fa-user"></i></div>
-                <div class="w3-rest">
-                <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name"/>
-                </div>
-            </div>
+            <label>Name</label>
+            <input placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}/>
 
-            <div class="w3-row w3-section">
-                <div class="w3-col" style={{width:50}}><i class="w3-xxlarge fa fa-envelope-o"></i></div>
-                <div class="w3-rest">
-                <input class="w3-input w3-border" name="email" type="text" placeholder="Email"/>
-                </div>
-            </div>
+            <label>Email</label>
+            <input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
 
-            <div class="w3-row w3-section">
-                <div class="w3-col" style={{width:50}}><i class="w3-xxlarge fa fa-phone"></i></div>
-                <div class="w3-rest">
-                <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone"/>
-                </div>
-            </div>
-
-            <div class="w3-row w3-section">
-                <div class="w3-col" style={{width:50}}><i class="w3-xxlarge fa fa-pencil"></i></div>
-                <div class="w3-rest">
-                <input class="w3-input w3-border" name="message" type="text" placeholder="Message"/>
-                </div>    
-            </div>
-
-            <p class="w3-center">
-                <button class="w3-button w3-section w3-blue w3-ripple"> Send </button>
-            </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-           
-        </div>
+            <label>Message</label>
+           <textarea placeholder="Message" value={message} onChange={(e)=> setMessage(e.target.value)}></textarea>
+           <button type="submit" style={{background: loader ? "#ccc" : "black"}}>Submit</button>
+        </form>
     )
 }
 
-export default Conctactus
-
-
+export default Contact
