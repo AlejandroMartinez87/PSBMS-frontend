@@ -57,7 +57,7 @@ function Login() {
 
                 <p>
                     By signing-in you agree to the PSBMS Conditions of Use. Please
-                    see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+                    see our Privacy Notice, and our Cookies Notice.
                 </p>
 
                 <button onClick={register} className='login__registerButton'>Create your Account</button>

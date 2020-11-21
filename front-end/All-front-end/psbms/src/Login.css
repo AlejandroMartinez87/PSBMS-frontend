@@ -13,6 +13,7 @@
   width: 100px;
   margin-right: auto;
   margin-left: auto;
+  background-color: lightgrey;
 }
 
 .login__container {
