@@ -26,19 +26,11 @@ class EventContainer extends Component {
       events: [
         {
           uid: 1578710655009,
-          dtstart: new Date("09/01/2020 23:00"),
-          dtend: new Date("09/01/2020 23:45"),
+          dtstart: new Date("09/01/2021 23:00"),
+          dtend: new Date("09/01/2021 23:45"),
           title: "Doctor's Appointment",
-          location: "San Diego",
+          location: "ParkLand",
           description: "My annual physical exam"
-        },
-        {
-          uid: 1578710655010,
-          dtstart: new Date("09/15/2020 17:15"),
-          dtend: new Date("09/15/2020 19:15"),
-          title: "Dinner Date",
-          location: "San Diego",
-          description: "Dinner with Jocelyn"
         },
         {
           uid: 1578710655011,
