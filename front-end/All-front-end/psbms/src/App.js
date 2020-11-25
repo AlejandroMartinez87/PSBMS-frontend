@@ -20,6 +20,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 // import {loadStripe} from "@stripe/stripe-js";
 import HFooter from "./CallFoot";
+import EventSchedule from "./EventSchedule";
 
 function App() {
   return (
@@ -70,6 +71,11 @@ function App() {
             <HeaderLo/>
             <LandSample/>
             {/* <HFooter/> */}
+          </Route>
+
+          <Route path="/eventschedule">
+            <EventSchedule/>
+            <HFooter/>
           </Route>
 
 

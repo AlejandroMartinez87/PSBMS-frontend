@@ -48,6 +48,7 @@ function Sidebar(){
             {!Cashflow ? '' : <CashFlow/>}
             {!Goals ? '' : <GOALS/>}
             {!Inventory ? '' : <INVENTORY/>}
+            {/* {!Scheduling ? '' : <SCHEDULING/>} */}
         </div>
     )
 }
