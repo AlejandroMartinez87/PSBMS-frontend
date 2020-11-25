@@ -74,6 +74,7 @@ function App() {
           </Route>
 
           <Route path="/eventschedule">
+            <HeaderLo/>
             <EventSchedule/>
             <HFooter/>
           </Route>

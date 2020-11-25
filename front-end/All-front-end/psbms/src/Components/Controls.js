@@ -4,7 +4,7 @@ import AddIcon from "@material-ui/icons/Add";
 
 const containerStyle = {
   backgroundColor: "#cccccc",
-  color: "#000000",
+  color: "black",
   display: "flex",
   alignItems: "center",
   fontWeight: "bold",

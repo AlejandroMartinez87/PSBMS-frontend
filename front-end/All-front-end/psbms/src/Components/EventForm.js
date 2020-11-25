@@ -17,9 +17,10 @@ const containerStyle = {
   backgroundColor: "rgba(204, 204, 204)",
   padding: "0em 1em 1em",
   color: "#111111",
-  borderRadius: "1em",
+  borderRadius: "0em",
   boxShadow: "#000000 3px 3px 4px 1px",
   border: "1px #000000 solid"
+
 };
 
 const formTitleStyle = {

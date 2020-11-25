@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import DateTime from "../Data/DateTime";
 import EventForm from "../Components/EventForm";
 import EventList from "../Components/EventList";
 import Controls from "../Components/Controls";
+import {db} from '../firebase';
 
 const style = {
   backgroundColor: "rgb(93,93,93)",
@@ -15,8 +16,13 @@ const style = {
   padding: "0em 1em"
 };
 
+// const [name,setName]=useState("");
+// const [dtstart,setDtstart]=useState("");
+// const [message,setMessage]=useState("");
+
 class EventContainer extends Component {
-  constructor(props) {
+// function EventContainer(){
+  constructor (props) {
     super(props);
     this.state = {
       dt: "",
