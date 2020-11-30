@@ -6,6 +6,7 @@ import CashFlow from './../Components/cashflow.js';
 import GOALS from './../Components/goals.js';
 import INVENTORY from './../Components/inventory.js';
 import SCHEDULING from '../../EventSchedule';
+import Sample from './../Components/sample.js';
 
 function Sidebar(){
     const [sidebar, setSidebar] = useState(false);
@@ -53,6 +54,7 @@ function Sidebar(){
             {!Goals ? '' : <GOALS/>}
             {!Inventory ? '' : <INVENTORY/>}
             {!Scheduling ? '' : <SCHEDULING/>}
+            {<Sample/>}
         </div>
     )
 }
