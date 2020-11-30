@@ -54,9 +54,9 @@ function Sidebar(){
             {!Goals ? '' : <GOALS/>}
             {!Inventory ? '' : <INVENTORY/>}
             {!Scheduling ? '' : <SCHEDULING/>}
-            {<Sample/>}
         </div>
     )
 }
+//{<Sample/>}
 //the use of ternary operators is to show and hide the forms
 export default Sidebar
