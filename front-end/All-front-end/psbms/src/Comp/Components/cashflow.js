@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import  './../Styles/cashflow.css';
 import * as ReactBootStrap from "react-bootstrap";
 import TextField from '@material-ui/core/TextField';
+import axios from "axios"; 
 
 class List extends Component {
         state = {
           todos: [], //filled with the information pulled,
+          id: "1",
+          title: "",
+          description: "",
+          amount: "",
+          user: "2",
         };
         async componentDidMount() {
           try {
@@ -21,6 +27,32 @@ class List extends Component {
             console.log(e);
           }
         }
+        handleInput = (e) => { 
+          this.setState({ 
+              [e.target.name]: e.target.value, 
+          }); 
+        }; 
+      
+        handleSubmit = (e) => { 
+          e.preventDefault(); 
+      
+          axios 
+                .post("https://cse3311.herokuapp.com/api/expenses/", { 
+                  title: this.state.title, 
+                  description: this.state.description, 
+                  amount: this.state.amount, 
+                  user: this.state.user,
+                  id: this.state.id,
+              }) 
+              .then((res) => { 
+                  this.setState({ 
+                    title: "",
+                    description: "",
+                    amount: "",
+                  }); 
+              }) 
+              .catch((err) => {}); 
+      }; 
 
     //for each item, load that item and give it the proper css
     renderItem = (thing, index) => {
@@ -38,8 +70,16 @@ render() {
         //the thead is the header of the tables, after it is loaded dynamically
         <div className = 'formC'>
             <h1 className="bet">Review</h1>
-            <TextField id="outlined-search" label="Start Date" type="search" variant="outlined" className = "spaceC"/>
-            <TextField id="outlined-search" label="End Date" type="search" variant="outlined" className = "space2C"/>
+
+            <form className = "formf"  onSubmit={this.handleSubmit}>
+            <TextField id="outlined-search" onChange = {this.handleInput} type="text" name = "title" value ={this.state.title} label="Title" variant="outlined" />
+    <TextField id="outlined-search" onChange = {this.handleInput} type="text" name = "description" value ={this.state.description} label="Description" variant="outlined"/>
+    <TextField id="outlined-search" onChange = {this.handleInput} type="text" name = "amount" value ={this.state.amount} label="$ amount" variant="outlined"/>
+      <button type="submit" variant="outlined" color="secondary">
+        Submit
+      </button>
+      </form>
+
             <ReactBootStrap.Table striped bordered hover className = "tableC">
                 <thead>
                     <th className='headerC'>Item</th>

@@ -25,7 +25,7 @@ class BasicTextFields extends Component {
     e.preventDefault(); 
 
     axios 
-        .post("https://cse3311.herokuapp.com/api/expenses/", { 
+        .post("https://cse3311.herokuapp.com/api/payCheck/", { 
             title: this.state.title, 
             description: this.state.description, 
             amount: this.state.amount, 
