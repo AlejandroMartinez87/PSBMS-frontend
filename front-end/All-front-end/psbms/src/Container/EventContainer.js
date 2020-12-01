@@ -52,7 +52,7 @@ class EventContainer extends Component {
           location: "New York",
           description: "Amazon Future"
         },
-        {
+         {
           uid: 1578710655010,
           dtstart: new Date("09/15/2020 17:15"),
           dtend: new Date("09/15/2020 19:15"),
