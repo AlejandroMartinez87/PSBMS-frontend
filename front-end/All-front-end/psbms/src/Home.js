@@ -10,7 +10,13 @@ function Home() {
     return (
         <div className="homeA">
             <img className="home__imageA" src={HomeI} alt=""/> 
+
+            <div>
+            
+            </div>
         </div>
+
+        
     )
 }
 

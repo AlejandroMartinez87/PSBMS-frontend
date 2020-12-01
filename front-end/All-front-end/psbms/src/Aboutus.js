@@ -75,6 +75,24 @@ function Aboutus() {
 
         </div>
 
+        <div>
+            <h3>Alex Martinez</h3>
+            <p></p>
+
+            <h3>Joel Itipo </h3>
+            <p></p>
+
+            <h3>Jimmy Lee</h3>
+            <p></p>
+
+            <h3>Ujjwal Bajagain</h3>
+            <p></p> 
+
+            
+
+        
+        </div>
+
     </div>
 
 
