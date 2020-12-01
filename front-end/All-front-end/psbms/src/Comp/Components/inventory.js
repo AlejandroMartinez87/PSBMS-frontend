@@ -14,7 +14,6 @@ class Inventory extends Component{
     name: "",
     description: "",
     cost_price: "",
-    last_modified: "2020-11-30",
     barcode: "",
     quantity: "",
     restock: "",

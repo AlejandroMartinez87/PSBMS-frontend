@@ -83,8 +83,8 @@ render() {
             <ReactBootStrap.Table striped bordered hover className = "tableC">
                 <thead>
                     <th className='headerC'>Item</th>
-                    <th className='headerC'>Type</th>
-                    <th className='headerC'>User</th>
+                    <th className='headerC'>Description</th>
+                    <th className='headerC'>Amount</th>
                 </thead>
                 <tbody>
                     {this.state.todos.map(this.renderItem)}
