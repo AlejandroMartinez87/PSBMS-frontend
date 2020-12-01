@@ -6,7 +6,7 @@ import HeaderLo from "./HeaderLogin";
 import Login from "./Login"
 import Home from "./Home";
 import Aboutus from "./Aboutus";
-import Psbms from "./PSBMS"; 
+import Psbms from "./psbms"; 
 import Contactus from "./Conctactus";
 import Invest from "./Investment";
 // import Loginpage from './Loginpage'; // to be deleted 
