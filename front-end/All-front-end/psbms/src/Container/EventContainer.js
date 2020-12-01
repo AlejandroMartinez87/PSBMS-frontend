@@ -16,9 +16,7 @@ const style = {
   padding: "0em 1em"
 };
 
-// const [name,setName]=useState("");
-// const [dtstart,setDtstart]=useState("");
-// const [message,setMessage]=useState("");
+
 
 class EventContainer extends Component {
 // function EventContainer(){
@@ -53,7 +51,15 @@ class EventContainer extends Component {
           title: "Business Summit",
           location: "New York",
           description: "Amazon Future"
-        }
+        },
+        {
+          uid: 1578710655010,
+          dtstart: new Date("09/15/2020 17:15"),
+          dtend: new Date("09/15/2020 19:15"),
+          title: "Dinner Date",
+          location: "San Diego",
+          description: "Dinner with Jocelyn"
+        },
       ]
     };
     this.handleShowFormClick = this.handleShowFormClick.bind(this);
