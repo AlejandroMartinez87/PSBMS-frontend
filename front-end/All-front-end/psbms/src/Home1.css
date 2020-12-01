@@ -12,15 +12,32 @@ margin-bottom:-150px;
 }
 
 .text__info{
-    /* /* background-position-x: left; */
     font-size: 16px;
     width: 900px;
-    /* color: red;  */
+    color: black; 
     margin-top: 200px;
     margin-left: 20px; 
-    margin-right: 1270px;
-    font-weight: 750;
+    /* margin-right: 1270px; */
+    font-weight: 850;
     text-align: center;
-    /* size: ; */
-    
+    /* background-color:lightgray; */
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.benefit{
+    font-size: 16px;
+    width: 700px;
+    margin-left: 1000px; 
+    font-weight: 850;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.privacy__info{
+    font-size: 16px;
+    width: 900px;
+    margin-left: 20px; 
+    font-weight: 850;
+    font-family: 'Courier New', Courier, monospace;
+
 }
