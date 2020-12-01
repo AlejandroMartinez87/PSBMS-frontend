@@ -75,6 +75,24 @@ function Aboutus() {
 
         </div>
 
+        <div className="Descr_us">
+            <h3>Alex Martinez</h3>
+            <p> Senior Computer Science Student. Alex is passionate about ...</p>
+
+            <h3>Joel Itipo </h3>
+            <p></p>
+
+            <h3>Jimmy Lee</h3>
+            <p></p>
+
+            <h3>Ujjwal Bajagain</h3>
+            <p></p> 
+
+
+
+        
+        </div>
+
     </div>
 
 

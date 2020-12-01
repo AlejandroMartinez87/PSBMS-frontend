@@ -76,6 +76,20 @@ html {
       border-color: black;
   }
 
+  .Descr_us{
+    font-size: 16px;
+    width: 900px;
+    color: black; 
+    margin-top: 200px;
+    margin-left: 20px; 
+    margin-right: 1270px;
+    font-weight: 850;
+    /* text-align: center; */
+    background-color:lightgray;
+    background-attachment: fixed;
+
+  }
+
   h2{
       color:black; 
   }
