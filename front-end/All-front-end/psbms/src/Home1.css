@@ -10,3 +10,17 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
 z-index:-1;
 margin-bottom:-150px;
 }
+
+.text__info{
+    /* /* background-position-x: left; */
+    font-size: 16px;
+    width: 900px;
+    /* color: red;  */
+    margin-top: 200px;
+    margin-left: 20px; 
+    margin-right: 1270px;
+    font-weight: 750;
+    text-align: center;
+    /* size: ; */
+    
+}

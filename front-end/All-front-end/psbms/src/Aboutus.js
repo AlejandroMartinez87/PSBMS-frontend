@@ -75,9 +75,9 @@ function Aboutus() {
 
         </div>
 
-        <div>
+        <div className="Descr_us">
             <h3>Alex Martinez</h3>
-            <p></p>
+            <p> Senior Computer Science Student. Alex is passionate about ...</p>
 
             <h3>Joel Itipo </h3>
             <p></p>
@@ -88,7 +88,7 @@ function Aboutus() {
             <h3>Ujjwal Bajagain</h3>
             <p></p> 
 
-            
+
 
         
         </div>
